@@ -1894,9 +1894,31 @@
                   // console.log(d.toString());          //toString() method returns the date and time as a String in the Local Format (i.e., in IST).
                   
             // [METHOD - 03]
-                  // console.log(Date.now());          //now() method returns the number of milliseconds since 1 january 1970
+                  // console.log(Date.now());          //now() method returns the number of milliseconds since 1 january 1970.
 
 
                   // Note: JavaScript counts months from 0 to 11:
-                  // January = 0.                  
-                  // December = 11.
+                              // January = 0.                  
+                              // December = 11.
+
+                              
+                              
+            // // You cannot omit month , minimum there should always be two arguments. If you supply only one parameter it will be treated as milliseconds.
+            //       let d = new Date(2021, 0, 3)
+            //       console.log(d.toString());
+            //       console.log(d.toLocaleString());
+
+
+
+ 
+      //Another Method of creating the Date object.
+            //new Date(date String)
+                  let d = new Date("January 9, 1999 08:55:09");
+                  console.log(d.toLocaleString());
+                  console.log(d.toString());
+
+
+
+      //Another Method of creating the Date object.
+
+                  
