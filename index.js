@@ -1877,3 +1877,7 @@
       
 
       // JavaScript stores dates as the number of milliseconds since 1 Januarry 1970
+            //new Date(milliseconds)
+                  console.log(new Date(0));    //0 meaning 1 Juary 19780
+                  console.log(new Date(100000000));
+                  console.log(new Date(-100000000));
