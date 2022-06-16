@@ -1855,7 +1855,15 @@
 
       //  There are 4 ways for Creating Date object
 
-      console.log(new Date());    //we get 'current' date and time, by creating date object using this method.
+      // console.log(new Date());    //we get 'current' date and time, by creating date object using this method.
 
       // new Date(year, month, day, hours, minutes, seconds, milliseconds);   //it takes 7 arguments
-      console.log(new Date(2018, 10, 28, 5, 58, 25, 60));   //this method creats new date object with the specified time
+      // console.log(new Date(2018, 10, 28, 5, 58, 25, 60));   //this method creats new date object with the specified time
+      
+      //We can also pass 6 or 4 or 3 or 2 parameters
+      // console.log(new Date(2018, 10, 28, 5, 58, 25));  
+      // console.log(new Date(2018, 10, 28, 5, 58));  
+      // console.log(new Date(2018, 10, 28, 5));  
+      // console.log(new Date(2018, 10, 28));  
+      // console.log(new Date(2018, 10));  
+      
