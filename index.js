@@ -1928,21 +1928,29 @@
                   // console.log(d.toLocaleString());
 
 
-//Some important methods of the Date object.
-            let d = new Date();
+// //Some important methods of the Date object.
+//             let d = new Date();
 
-            console.log(d.toLocaleString());
+//             console.log(d.toLocaleString());
             
-      // [METHOD - 01]    getFullYear()
-            console.log(d.getFullYear());       //if we donot pass any parameter then it will return the current year
+//       //get() methods :
+      
+//       // [METHOD - 01]    getFullYear()
+//             console.log(d.getFullYear());       //if we donot pass any parameter then it will return the current year
 
-      // [METHOD - 02]    getMonth()
-            console.log(d.getMonth());          //if we donot pass any parameter then it will return the current month
+//       // [METHOD - 02]    getMonth()
+//             console.log(d.getMonth());          //if we donot pass any parameter then it will return the current month
+            
+//       // [METHOD - 03]    getDate()
+//             console.log(d.getDate());           //if we donot pass any parameter then it will return the current Date
 
-      // [METHOD - 03]    getDate()
-            console.log(d.getDate());           //if we donot pass any parameter then it will return the current Date
-
-      // [METHOD - 04]    getDay()
-            console.log(d.getDay());            //if we donot pass any parameter then it will return the current Day
+//       // [METHOD - 04]    getDay()
+//             console.log(d.getDay());            //if we donot pass any parameter then it will return the current Day
             
       
+
+      //set() methods :
+
+      //[METHOD - 01]   setFullYear()
+
+            console.log();
