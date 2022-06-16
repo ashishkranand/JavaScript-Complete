@@ -1854,7 +1854,8 @@
       // SECTION - 088️⃣ : DATE AND TIME IN JAVASCRIPT
 
       //  There are 4 ways for Creating Date object
+
       console.log(new Date());    //we get 'current' date and time, by creating date object using this method.
 
       // new Date(year, month, day, hours, minutes, seconds, milliseconds);   //it takes 7 arguments
-      console.log(new Date(2018, 10, 28, 5, 58, 25, 60));   
+      console.log(new Date(2018, 10, 28, 5, 58, 25, 60));   //this method creats new date object with the specified time
