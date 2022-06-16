@@ -1855,15 +1855,25 @@
 
       //  There are 4 ways for Creating Date object
 
+
+
+
       // console.log(new Date());    //we get 'current' date and time, by creating date object using this method.
+
+
+
 
       // new Date(year, month, day, hours, minutes, seconds, milliseconds);   //it takes 7 arguments
       // console.log(new Date(2018, 10, 28, 5, 58, 25, 60));   //this method creats new date object with the specified time
       
       //We can also pass 6 or 4 or 3 or 2 parameters
-      // console.log(new Date(2018, 10, 28, 5, 58, 25));  
-      // console.log(new Date(2018, 10, 28, 5, 58));  
-      // console.log(new Date(2018, 10, 28, 5));  
-      // console.log(new Date(2018, 10, 28));  
-      // console.log(new Date(2018, 10));  
+                  // console.log(new Date(2018, 10, 28, 5, 58, 25));  //year, month, day, hours, minutes, seconds
+                  // console.log(new Date(2018, 10, 28, 5, 58));        //year, month, day, hours, minutes
+                  // console.log(new Date(2018, 10, 28, 5));      //year, month, day, hours
+                  // console.log(new Date(2018, 10, 28));   //year, month, day
+                  // console.log(new Date(2018, 10));       year, month
       
+
+      
+
+      // JavaScript stores dates as the number of milliseconds since 1 Januarry 1970
