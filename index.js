@@ -1912,13 +1912,21 @@
 
  
       //Another Method of creating the Date object.
-            //new Date(date String)
-                  let d = new Date("January 9, 1999 08:55:09");
-                  console.log(d.toLocaleString());
-                  console.log(d.toString());
+            // //new Date(date String)
+            //       let d = new Date("January 9, 1999 08:55:09");
+            //       console.log(d.toLocaleString());
+            //       console.log(d.toString());
 
 
 
       //Another Method of creating the Date object.
 
-                  
+                  // let d = new Date(0);
+                  // let d = new Date(13827482748247);
+                  // let d = new Date(-28738247);
+
+                  // console.log(d.toLocaleString());
+
+
+      //Some important methods of the Date object.
+      
