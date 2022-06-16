@@ -1765,9 +1765,10 @@
 
 // Return the Unicode of the last character in a string
 
-// let str = "HELLO WORLD";
-// let lastChar = str.length - 1;
-// console.log(str.charCodeAt(lastChar));
+      let str = "HELLO WORLD";
+      let lastChar = str.length - 1;
+      console.log(str.charCodeAt(lastChar));
+      console.log(str.charCodeAt(str.charAt(str.length - 1)));
 
 
 
