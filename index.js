@@ -1765,19 +1765,20 @@
 
 // Return the Unicode of the last character in a string
 
-      let str = "HELLO WORLD";
-      let lastChar = str.length - 1;
-      console.log(str.charCodeAt(lastChar));
-      console.log(str.charCodeAt(str.charAt(str.length - 1)));
+      // let str = "HELLO WORLD";
+      // let lastChar = str.length - 1;
+
+      // console.log(str.charAt(lastChar));
+      // console.log(str.charCodeAt(lastChar));
 
 
 
 
 // Property Access
-// ECMAScript 5 (2009) allows property access [ ] on strings
+      // ECMAScript 5 (2009) allows property access [ ] on strings
 
-// var str = "HELLO WORLD";
-// console.log(str[1]);
+      // var str = "HELLO WORLD";
+      // console.log(str[1]);
 
 
 
