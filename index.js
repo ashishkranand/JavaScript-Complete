@@ -1877,13 +1877,26 @@
       
 
       // JavaScript stores dates as the number of milliseconds since 1 Januarry 1970
-            //new Date(milliseconds)
+                  //new Date(milliseconds)
                   // console.log(new Date(0));    //0 meaning 1 Juary 19780
                   // console.log(new Date(100000000));
                   // console.log(new Date(-100000000));
 
 
-      let d = new Date();
-      console.log(d);         //simply printing the Date object will return the Greenwich mean time(GMT) format in the browser console.
-      console.log(d.toLocaleString());          //toLocalString() method returns the date and time as a String in the Local Format (i.e., in IST)
-      console.log(d.toString());          //toString() method returns the date and time as a String in the Local Format (i.e., in IST).
+                  // let d = new Date();
+
+                  // console.log(d);         //simply printing the Date object will return the Greenwich mean time(GMT) format in the browser console.
+
+            // [METHOD - 01]
+                  // console.log(d.toLocaleString());          //toLocalString() method returns the date and time as a String in the Local Format (i.e., in IST)
+            
+            // [METHOD - 02]
+                  // console.log(d.toString());          //toString() method returns the date and time as a String in the Local Format (i.e., in IST).
+                  
+            // [METHOD - 03]
+                  // console.log(Date.now());          //now() method returns the number of milliseconds since 1 january 1970
+
+
+                  // Note: JavaScript counts months from 0 to 11:
+                  // January = 0.                  
+                  // December = 11.
