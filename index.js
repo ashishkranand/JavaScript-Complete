@@ -1953,22 +1953,24 @@
 
       //[METHOD - 01]   setFullYear()
 
-            let d = new Date();
-            console.log(d.setFullYear(1999));
-            
-            d.setFullYear(1999);
-            console.log(d.getFullYear());
-            
+            // let d = new Date();
+            // console.log(d.setFullYear(1999));
 
-
-            console.log(d.setMonth(11));
-
-            d.setMonth(11);
-            console.log(d.getMonth());
+            // d.setFullYear(1999);
+            // console.log(d.getFullYear());
             
 
 
-            console.log(d.setDate(25));
+            // console.log(d.setMonth(11));
 
-            d.setDate(25);
-            console.log(d.getDate());
+            // d.setMonth(11);
+            // console.log(d.getMonth());
+            
+
+
+// TIME METHODS
+
+                  let curTime = new Date();
+
+
+
