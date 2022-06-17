@@ -1930,8 +1930,11 @@
 
 // //Some important methods of the Date object.
 //             let d = new Date();
-
 //             console.log(d.toLocaleString());
+
+
+
+//🎉🎉🎉🎉Date() object methods for : DATE only🎉🎉🎉
             
 //       //get() methods :
       
@@ -1955,22 +1958,54 @@
 
             // let d = new Date();
             // console.log(d.setFullYear(1999));
+            // console.log(d.setFullYear(2022));
 
             // d.setFullYear(1999);
             // console.log(d.getFullYear());
             
 
 
-            // console.log(d.setMonth(11));
+            // console.log(d.setMonth(1));
 
             // d.setMonth(11);
             // console.log(d.getMonth());
+
+
+            // console.log(d.setDate(1));
+
+            // d.setDate(11);
+            // console.log(d.getDate());
             
 
 
-// TIME METHODS
+//🎉🎉🎉🎉 Date() object methods for : TIME only🎉🎉🎉
 
                   let curTime = new Date();
+            
+                  // [METHOD - 01] : getTime()
+                  console.log(curTime.getTime());           //returns the total number of milliseconds since 1 January 1970.
 
 
+                  //CHALLENGE : Find the total number of years, months, days since 1 January 1970.
 
+                              let seconds = 1000       //since in 1 second here are 1000  milliseconds
+                              let minutes = 1000 * 60      //total number of milliseconds in a minute
+                              let hours =  minutes * 60      //total number of milliseconds in an hour
+                              let days = hours * 24       //total number of milliseconds in a day
+                              let months =  days * 30      //total number of milliseconds in a month
+                              let years =  months * 12      //total number of milliseconds in a year
+
+                              //total numbers of minutes since 1 january 1970
+                                    console.log(curTime.getTime() / minutes);
+
+                              //total numbers of hours since 1 january 1970
+                                    console.log(curTime.getTime() / hours);
+
+                              //total numbers of days since 1 january 1970
+                                    console.log(curTime.getTime() / days);
+
+                              //total numbers of months since 1 january 1970
+                                    console.log(curTime.getTime() / months);
+
+                              //total numbers of years since 1 january 1970
+                                    console.log(curTime.getTime() / years);
