@@ -1980,32 +1980,143 @@
 
 //🎉🎉🎉🎉 Date() object methods for : TIME only🎉🎉🎉
 
-                  let curTime = new Date();
+                  // let curTime = new Date();
+
+            //get methods:
             
-                  // [METHOD - 01] : getTime()
-                  console.log(curTime.getTime());           //returns the total number of milliseconds since 1 January 1970.
+                  // // [METHOD - 01] : getTime()
+                  // console.log(curTime.getTime());           //returns the total number of milliseconds since 1 January 1970.
 
 
                   //CHALLENGE : Find the total number of years, months, days since 1 January 1970.
 
-                              let seconds = 1000       //since in 1 second here are 1000  milliseconds
-                              let minutes = 1000 * 60      //total number of milliseconds in a minute
-                              let hours =  minutes * 60      //total number of milliseconds in an hour
-                              let days = hours * 24       //total number of milliseconds in a day
-                              let months =  days * 30      //total number of milliseconds in a month
-                              let years =  months * 12      //total number of milliseconds in a year
+                              // let seconds = 1000       //since in 1 second here are 1000  milliseconds
+                              // let minutes = 1000 * 60      //total number of milliseconds in a minute
+                              // let hours =  minutes * 60      //total number of milliseconds in an hour
+                              // let days = hours * 24       //total number of milliseconds in a day
+                              // let months =  days * 30      //total number of milliseconds in a month
+                              // let years =  months * 12      //total number of milliseconds in a year
 
-                              //total numbers of minutes since 1 january 1970
-                                    console.log(curTime.getTime() / minutes);
+                              // //total numbers of minutes since 1 january 1970
+                              //       console.log(curTime.getTime() / minutes);       // total number of milliseconds since 1 Jan 1970 divided by total no of milliseconds in a minute.
 
-                              //total numbers of hours since 1 january 1970
-                                    console.log(curTime.getTime() / hours);
+                              // //total numbers of hours since 1 january 1970
+                              //       console.log(curTime.getTime() / hours);
 
-                              //total numbers of days since 1 january 1970
-                                    console.log(curTime.getTime() / days);
+                              // //total numbers of days since 1 january 1970
+                              //       console.log(curTime.getTime() / days);
 
-                              //total numbers of months since 1 january 1970
-                                    console.log(curTime.getTime() / months);
+                              // //total numbers of months since 1 january 1970
+                              //       console.log(curTime.getTime() / months);
 
-                              //total numbers of years since 1 january 1970
-                                    console.log(curTime.getTime() / years);
+                              // //total numbers of years since 1 january 1970
+                              //       console.log(curTime.getTime() / years);
+
+
+
+
+                  //             let d = new Date("June 17, 2022 11:56:24:89")
+                  // //[METHOD - 02] : getHours()
+                  //             console.log(d.getHours());
+                  //             console.log(new Date().getHours());
+                              
+                  // //[METHOD - 03] : getMinutes()
+                  //             console.log(d.getMinutes());
+                  //             console.log(new Date().getMinutes());
+
+                  // //[METHOD - 04] : getSeconds()
+                  //             console.log(d.getSeconds());
+                  //             console.log(new Date().getSeconds());
+
+                  // //[METHOD - 05] : getMilliSeconds()
+                  //             console.log(d.getMilliseconds());
+                  //             console.log(new Date().getMilliseconds());
+
+
+            //set methods:
+                  
+                  //[METHOD - 01] : setTime(milliseconds): 
+                                    //this method add the passed milliseconds in 1 Janurary 1970
+                                    //Return Type : retuns the number of milliseconds from 1 January 1970 to the pass number of milliseconds
+                  
+
+                                    //Using setTime() method
+
+                                          //EXAMPLE - 01
+
+                                                // let launchDate = new Date('January 1, 1872 12:54:55');
+                                                // let futureDate = new Date();
+
+                                                // futureDate.setTime(launchDate.getTime())
+                                                // console.log(futureDate.toLocaleString());
+                                                
+                                                
+                                                
+                                                
+                                          //EXAMPLE - 02
+
+                                                // let reqDate = new Date("January 9, 1999 01:25:54");
+                                                // let futureDate = new Date();
+                                                
+                                                // futureDate.setTime(reqDate.getTime());
+                                                // console.log(futureDate.toLocaleString());
+
+                                          
+                                          
+                                          
+                                    
+
+
+                 
+                                          
+                                          
+                  //[METHOD - 02] : setHours(hours, minutes, seconds, milliseconds): 
+                                    //method returns the number of milliseconds from 1 Jan 1970.
+                  
+                                    //Using setHours() method:
+                                    
+                                          // let d = new Date();
+                                          
+                                          // d.setHours(8);       //hours parameter is passed
+                                          // console.log(d.toLocaleString());
+
+
+                                          
+                  // //[METHOD - 03] : setMinutes(minutesValue, secondsValue, msValue): 
+                  //                   //Using setHours() method:
+
+
+                  //                         let d = new Date();
+
+                  //                         console.log(d.toLocaleString());
+
+                  //                         d.setMinutes(10);
+                  //                         console.log(d.toLocaleString());
+
+
+                  // //[METHOD - 04] : setSeconds(secondVal, MilliSecondVal): 
+                  //                   //Using setHours(secondVal, MilliSecondVal) method:
+
+
+                  //                         let d = new Date();
+
+                  //                         console.log(d.toLocaleString());
+
+                  //                         d.setSeconds(50);
+                  //                         console.log(d.toLocaleString());
+
+                  //[METHOD - 05] : setMilliSeconds(MillisecondVal): 
+                                    //Using setHours(MillisecondVal) method:
+
+
+                                          let d = new Date();
+
+                                          console.log(d.toLocaleString());
+
+                                          d.setMilliseconds(50);
+                                          console.log(d.toLocaleString());
+
+
+
+                                    //toLocaleDateString()
+                                    //toLocaleTimeString()
