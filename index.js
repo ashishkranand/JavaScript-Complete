@@ -2121,10 +2121,88 @@
 
 
 
-                  //[METHOD - 06] : toLocaleDateString()
+                  // //[METHOD - 06] : toLocaleDateString()
 
-                                          let d = new Date();
-                                          console.log(d.toLocaleDateString());
+                  //                         let d = new Date();
+                  //                         console.log(d.toLocaleDateString());
                                           
-                  //[METHOD - 07] : toLocaleTimeString()
-                                          console.log(d.toLocaleDateString());
+                  // //[METHOD - 07] : toLocaleTimeString()
+                  //                         console.log(d.toLocaleDateString());
+
+
+
+
+
+
+
+//************➡️SECTION - 09  MATH OBJECCT IN JAVASCRIPT*********
+
+//JavaScript math Object allows you to perform Mathematical Tasks on number.
+
+// // [Property] : Math.PI
+//       console.log(Math.PI);
+
+
+
+//There are Four common methods to round a Number to an Integer
+
+            // // 1. Math.round(x) - retuns x rounded to its nearest integer
+            //       console.log(Math.round(4.534));
+
+
+            // // 2. Math.ceil(x) - retuns x rounded 'up' to its nearest integer
+            //       console.log(Math.ceil(4.9));
+            //       console.log(Math.ceil(4.7));
+            //       console.log(Math.ceil(4.4));
+            //       console.log(Math.ceil(4.2));
+            //       console.log(Math.ceil(-4.2));
+
+
+
+            // // 3. Math.floor(x) - retuns x rounded 'down' to its nearest integer
+            //       console.log(Math.floor(4.9));
+            //       console.log(Math.floor(4.7));
+            //       console.log(Math.floor(4.4));
+            //       console.log(Math.floor(4.2));
+            //       console.log(Math.floor(-4.2));
+
+
+
+            // // 4. Math.trunc(x) - retuns integer part of x
+            //       console.log(Math.trunc(4.9));
+            //       console.log(Math.trunc(5.7));
+            //       console.log(Math.trunc(8.4));
+            //       console.log(Math.trunc(6.2));
+            //       console.log(Math.trunc(-4.2));
+
+
+
+
+// // [METHOD - 01] : Math.pow(x, y) - returns the value of x to the power y, it is similar to x**y
+//                   console.log(Math.pow(3, 2));
+//                   console.log(3**2);
+
+
+// // [METHOD - 02] : Math.sqrt(x) - returns the value of x to the power y, it is similar to x**y
+//                   console.log(Math.sqrt(9));
+
+
+
+// // [METHOD - 03] : Math.abs(x) - returns the absolute(positive) Value of x.
+//                   console.log(Math.abs(-49));
+
+
+
+// // [METHOD - 04] : Math.min(x, y, z...) - used to find the lowest Value in the list of arguments.
+//                   console.log(Math.min(-49, 3, 0, -2, 5));
+
+
+
+// // [METHOD - 05] : Math.max(x, y, z...) - used to find the highest value in the list of Arguments
+//                   console.log(Math.max(-49, 3, 0, -2, 5));
+
+
+
+
+      
+
