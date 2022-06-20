@@ -52,24 +52,34 @@
             // changedInnerHTML.innerHTML = "Welcome to this website";
 
 
-            //We can also use the querySelector for this
+            // //We can also use the querySelector for changing the innerHTML of the  heading
+            //     document.querySelector("#heading").innerHTML = "Welcome to this website";
         }
 
 
 
-        //getElementsBytagName(""); 
-                console.log(document.getElementsByClassName("para"));
+        // //getElementsBytagName(""); 
+        //         console.log(document.getElementsByClassName("para"));
 
 
 
-        //getElementsBytagName("");
-                console.log(document.getElementsByTagName("p"));
+        // //getElementsBytagName("");
+        //         console.log(document.getElementsByTagName("p"));
 
 
 
-        //From the Form-tag
+        // //From the Form-tag
+        //     console.log(document.getElementsByName("gender"));
 
-            console.log(document.getElementsByName("gender"));
+
+
+         
+
+        //querySelector() returns only the first matching element whereas 
+        //querySelectorAll() will return all matching the elements.
+
+            document.querySelector('.para').innerHTML = 'The inner HTML of the only the very-first class is changed';
+            console.log(document.querySelectorAll('.para'));
         
     </script>
 </body>

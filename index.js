@@ -2259,8 +2259,13 @@
             //7. document.body.firstChild()     //this includes tabs, enter and white spaces
                   //to find firstChild 
 
-                  
+
             //8. document.body.firstElementChild()     //this does not includes tabs, enter and white spaces
                   //to find firstElementChild 
+
+
+            //9. document.getElementById('id');
+                  //it returns the reference of the element by its ID.
+                  //furthe note that, if the element with the specified ID
 
 
