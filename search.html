@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p class="para"> Please like the video</p>
+    <p class="para"> Please share the video</p>
+    <p > Do not forget to subscribe the channel</p>
+
+    <h1 id="heading">Changed the contents of the h1</h1>
+
+    <button onclick="changeContent()"> Click Here</button>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+    <form action="">
+        <label for="">male</label>
+        <input type="radio" name="gender">
+
+        <label for="">female</label>
+        <input type="radio" name="gender">
+
+        <label for="">malefemale</label>
+        <input type="radio" name="gender">
+    </form>
+
+    <script>
+        let changeContent = () => {
+            // document.getElementById("heading").innerHTML = "Welome to this website";
+
+            // let changedInnerHTML = document.getElementById("heading");
+            // changedInnerHTML.innerHTML = "Welcome to this website";
+
+
+            //We can also use the querySelector for this
+        }
+
+
+
+        //getElementsBytagName(""); 
+                console.log(document.getElementsByClassName("para"));
+
+
+
+        //getElementsBytagName("");
+                console.log(document.getElementsByTagName("p"));
+
+
+
+        //From the Form-tag
+
+            console.log(document.getElementsByName("gender"));
+        
+    </script>
+</body>
+</html>
