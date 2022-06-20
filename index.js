@@ -2204,5 +2204,63 @@
 
 
 
+
+
+
+
+
+
+//SECTION - 10 : 👉 Document Object Model In JavaScript 
+
+//👉 The DOM is a the Document Object Model which deals with the document, the HTML elements themselves,
+//    e.g. document and all the traversals you do in it., events etc.
+
+//For Ex:
+// Changing the background color
+// document.body.style.background = "red"
+
+
+// 👉 The BOM is the Browser object model, which deals woth the browser components
+//     aside from the do ument, like history, navigator and screen
+//     (as well as some others that vary by the browser). OR
+//     In simple meaning all the Window operations which comes under BOM are performed
+//     using BOM.
       
+
+
+
+//SUBSECTION - 10.1  : DOM Navigation (Navigate Through the DOM)
+
+
+            //1. document.documentElement
+                  //returns the root Element of the document (i.e., the <html> element)
+
+
+            //2. document.head
+                  //returns the head Element 
+
+
+            //3. document.body
+                  //returns the body Element
+
+
+            //4. document.body.childNodes
+                  //returns all the child nodes of the body-element including the tabs, enter and white spaces.
+
+
+            //5. document.body.children
+                  //returns all the child nodes of the body-element excluding the tabs, enter and white spaces.
+
+                  
+            //6. document.body.hasChildNodes()
+                  //to find weather an html-element has child-Nodes or not
+
+
+            //7. document.body.firstChild()     //this includes tabs, enter and white spaces
+                  //to find firstChild 
+
+                  
+            //8. document.body.firstElementChild()     //this does not includes tabs, enter and white spaces
+                  //to find firstElementChild 
+
 
