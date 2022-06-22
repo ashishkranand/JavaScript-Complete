@@ -2269,3 +2269,15 @@
                   //furthe note that, if the element with the specified ID
 
 
+// SECTION - 11 EVENTS IN JAVASCRIPT
+
+//          HTML events are things that happens to the HTML elements
+//          When JavaScript is used in HTML pages, JavaScript react on these events
+
+
+//Four ways of writing events in JavaScript
+
+// 1. Using Inline Events - alert();
+// 2. By calling a function
+// 3. Using Inline events (HTML onclick =" " property and element.onclick)
+// 4. Using Event listeners (addeventListener and IE's attachEvent)
