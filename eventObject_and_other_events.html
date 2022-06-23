@@ -94,8 +94,6 @@
         <h1>Let's see what is event Object 🤩</h1>
         <div class="button_container">
 
-
-
             <!-- One way of event  -->
             <div class="button_su">
                 <span class="su_button_circle">
@@ -109,7 +107,23 @@
                 </a>                
             </div>        
           
+
+
+            <!-- Mouse Events : ommousedown() and onmouseup() -->
+             <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">            <!-- In this case we have used the  inline-Events -->
+                Click the text! The mouseDown() function is triggered when the mouse button is pressed
+                down over the paragraph, and sets the color of the text to red.
+                The mouseUp() function is triggered when the mouse button is released and sets
+                the color of the text to green.
+            </p>                            
             
+            <!-- Mouse Events : mouseenter() and mouseleave() -->
+            <p id="box">
+                Enter you mouse in this paragraph 
+                to see the mouseEnter and mouseLeave
+                events triggered.
+            </p>
+
         </div>
 
     </div>
@@ -131,7 +145,34 @@
     let fourthWay = document.getElementById('fourthWay');
     fourthWay.addEventListener('click', checkEvent);
 
+
+
+
+    //MouseEvents
+
+        //mouseDown() events    
+            let mouseDown = () => {
+                document.getElementById("myP").style.color = 'red';
+            }
+
      
+        //mouseUp() events    
+            let mouseUp = () => {
+                document.getElementById("myP").style.color = 'green';
+            }
+        
+        //mouseEnter() events    
+        let mEnter = document.querySelector('#box');
+
+        mEnter.addEventListener('mouseenter', () => {
+            mEnter.style.color = "white"; 
+        });
+            
+        //mouseLeave() events    
+
+        mEnter.addEventListener('mouseleave', () => {
+            mEnter.style.color = "red";
+        });
 
 </script>
 
