@@ -137,7 +137,7 @@
             <!-- KeyBoard Events : onkeydown(), onkeypress() and onkeyup() -->
 
                 
-            <!-- onkeydown() event -->            
+                <!-- onkeydown() event -->            
 
                     <div>                
                         Type Here for keyDown Event : <input type="text" onkeydown="keyDown()" >
@@ -146,7 +146,7 @@
                     </div>
 
 
-            <!-- onkeypress() event -->
+                <!-- onkeypress() event -->
 
                     <div>                
                         Type Here for keyPress Event : <input type="text" onkeypress="keyPress()" >
@@ -156,13 +156,48 @@
 
 
 
-            <!-- onkeyUp() event -->
+                <!-- onkeyUp() event -->
 
                     <div>                
                         Type Here for keyUp Event : <input type="text" onkeyup="keyUp()" >
                         <br>
                         <p id="keyBoardEvent3"></p>
                     </div>
+
+
+
+            <!-- INPUT EVENTS -->
+                
+                <div>
+                    <label for="">Your name 👉 </label>
+                    <input type="text" id="ice">
+
+                    <br>
+                    
+                    <label> Choose an Icce Cream
+                            <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event -->
+                            <option value="">Select One ...</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="sardine">Sardine</option>
+                            <option value="vanilla">Vanilla</option>
+                        </select>
+                    </label>
+
+
+                    <br>
+
+                    <div id="result"></div>
+
+                    
+                </div>
+
+
+
+
+
+
+
+
 
 
         </div>
@@ -176,15 +211,15 @@
 
     
     //Remember that the fat-arrow function always need to be written before the function-call
-    let checkEvent = () => {
-        alert('Hi, there');
-        console.log(event);
-        // console.log(event.target);   //it will return the 'element' that triggers the event
-        // console.log(event.type);  // it will the return of the event-triggered weather it is a 'click' or something
-    }  
-    
-    let fourthWay = document.getElementById('fourthWay');
-    fourthWay.addEventListener('click', checkEvent);
+        let checkEvent = () => {
+            alert('Hi, there');
+            console.log(event);
+            // console.log(event.target);   //it will return the 'element' that triggers the event
+            // console.log(event.type);  // it will the return of the event-triggered weather it is a 'click' or something
+        }  
+        
+        let fourthWay = document.getElementById('fourthWay');
+        fourthWay.addEventListener('click', checkEvent);
 
 
 
@@ -221,25 +256,35 @@
 
     //KeyBoard Events
 
-        let keyEvent1 = document.getElementById('keyBoardEvent1');
+        //onkeydown() event
+            let keyEvent1 = document.getElementById('keyBoardEvent1');
             let keyDown = () => {
                 keyEvent1.innerHTML = `Key ${event.key} triggered the keyDown event and the keyCode is  : ${event.code}.`
             }
-
-
         
-        let keyEvent2 = document.getElementById('keyBoardEvent2');
+        
+        
+        //onkeypress() event
+            let keyEvent2 = document.getElementById('keyBoardEvent2');
             let keyPress = () => {
                 keyEvent2.innerHTML = `Key ${event.key} triggered the keyPress event and the keyCode is  : ${event.code}.`
             }
+        
+        
+        
+        
+        //onkeyup() event
+                let keyEvent3 = document.getElementById('keyBoardEvent3');
+                let keyUp = () => {
+                    keyEvent3.innerHTML = `Key ${event.key} triggered the keyUp event and the keyCode is  : ${event.code}.`
+                }
 
 
 
-            
-        let keyEvent3 = document.getElementById('keyBoardEvent3');
-            let keyUp = () => {
-                keyEvent3.innerHTML = `Key ${event.key} triggered the keyUp event and the keyCode is  : ${event.code}.`
-            }
+    
+
+
+    let inputChange = document.getElementById('ice');
 </script>
 
 
