@@ -95,6 +95,8 @@
         <div class="button_container">
 
 
+
+            <!-- One way of event  -->
             <div class="button_su">
                 <span class="su_button_circle">
 
@@ -108,7 +110,7 @@
             </div>
 
 
-
+            <!-- Second way of event -->
             <div class="button_su">
                 <span class="su_button_circle">
                 </span>
@@ -122,7 +124,7 @@
 
 
 
-
+            <!-- thirdWay of event -->
             <div class="button_su">
                 <span class="su_button_circle">
                 </span>
@@ -135,7 +137,7 @@
             </div>
 
 
-
+            <!-- fourthWay of event -->
             <div class="button_su">
                 <span class="su_button_circle">
                 </span>
@@ -151,9 +153,29 @@
     </div>
 
 <script>
-    let callingFunction = () => {
-        alert('This is most used method')
-    }
+
+    //2nd way of writing function
+        let callingFunction = () => {
+            alert('This is most used method')
+        }
+    
+    //3rd way of writing function
+        let thirdWay = document.getElementById("thirdWay");         //this will return the anchor element
+        thirdWay.onclick = function(){                  //here we are adding an onclick event to the anchor element.
+            alert('most common way of writing the function again')
+        }
+
+        thirdWay.onclick = function(){                  //here we are adding an onclick event to the anchor element.
+            console.log('most common way of writing the function again');
+        }
+
+    //4th way of writing function
+        let fourthWay = document.getElementById("fourthWay");
+        
+        fourthWay.addEventListener('click',() => {
+            alert('I love this way writing function');
+        })
+
 </script>
 
 
