@@ -165,13 +165,17 @@
             alert('most common way of writing the function again')
         }
 
-        thirdWay.onclick = function(){                  //here we are adding an onclick event to the anchor element.
-            console.log('most common way of writing the function again');
+        thirdWay.onclick = function(){                                      //if we add same event (here ,'onclick') to the same element then the very last event 
+            console.log('most common way of writing the function again')        // will be executed and all the other events before will get overwritten.
         }
 
     //4th way of writing function
         let fourthWay = document.getElementById("fourthWay");
         
+        fourthWay.addEventListener('click',() => {
+            console.log('I love this way writing function');
+        })
+
         fourthWay.addEventListener('click',() => {
             alert('I love this way writing function');
         })
