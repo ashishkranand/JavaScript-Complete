@@ -2275,9 +2275,12 @@
 //          When JavaScript is used in HTML pages, JavaScript react on these events
 
 
-//Four ways of writing events in JavaScript
+            //Four ways of writing events in JavaScript
 
-// 1. Using Inline Events - alert();
-// 2. By calling a function
-// 3. Using Inline events (HTML onclick =" " property and element.onclick)
-// 4. Using Event listeners (addeventListener and IE's attachEvent)
+            // 1. Using Inline Events - alert();
+            // 2. By calling a function
+            // 3. Using Inline events (HTML onclick =" " property and element.onclick)
+            // 4. Using Event listeners (addeventListener and IE's attachEvent)
+
+
+//           SECTION -  11.2 EVENT OBJECT
