@@ -94,7 +94,9 @@
         <h1>Let's see what is event Object 🤩</h1>
         <div class="button_container">
 
-            <!-- One way of event  -->
+
+
+
             <div class="button_su">
                 <span class="su_button_circle">
 
@@ -107,6 +109,8 @@
                 </a>                
             </div>        
           
+
+
 
 
             <!-- Mouse Events : ommousedown() and onmouseup() -->
@@ -123,6 +127,43 @@
                 to see the mouseEnter and mouseLeave
                 events triggered.
             </p>
+
+
+
+
+
+
+            
+            <!-- KeyBoard Events : onkeydown(), onkeypress() and onkeyup() -->
+
+                
+            <!-- onkeydown() event -->            
+
+                    <div>                
+                        Type Here for keyDown Event : <input type="text" onkeydown="keyDown()" >
+                        <br>
+                        <p id="keyBoardEvent1"></p>
+                    </div>
+
+
+            <!-- onkeypress() event -->
+
+                    <div>                
+                        Type Here for keyPress Event : <input type="text" onkeypress="keyPress()" >
+                        <br>
+                        <p id="keyBoardEvent2"></p>
+                    </div>
+
+
+
+            <!-- onkeyUp() event -->
+
+                    <div>                
+                        Type Here for keyUp Event : <input type="text" onkeyup="keyUp()" >
+                        <br>
+                        <p id="keyBoardEvent3"></p>
+                    </div>
+
 
         </div>
 
@@ -162,18 +203,43 @@
             }
         
         //mouseEnter() events    
-        let mEnter = document.querySelector('#box');
+            let mEnter = document.querySelector('#box');
 
-        mEnter.addEventListener('mouseenter', () => {
-            mEnter.style.color = "white"; 
-        });
+            mEnter.addEventListener('mouseenter', () => {
+                mEnter.style.color = "white"; 
+            });
             
         //mouseLeave() events    
 
-        mEnter.addEventListener('mouseleave', () => {
-            mEnter.style.color = "red";
-        });
+            mEnter.addEventListener('mouseleave', () => {
+                mEnter.style.color = "red";
+            });
 
+
+    
+
+
+    //KeyBoard Events
+
+        let keyEvent1 = document.getElementById('keyBoardEvent1');
+            let keyDown = () => {
+                keyEvent1.innerHTML = `Key ${event.key} triggered the keyDown event and the keyCode is  : ${event.code}.`
+            }
+
+
+        
+        let keyEvent2 = document.getElementById('keyBoardEvent2');
+            let keyPress = () => {
+                keyEvent2.innerHTML = `Key ${event.key} triggered the keyPress event and the keyCode is  : ${event.code}.`
+            }
+
+
+
+            
+        let keyEvent3 = document.getElementById('keyBoardEvent3');
+            let keyUp = () => {
+                keyEvent3.innerHTML = `Key ${event.key} triggered the keyUp event and the keyCode is  : ${event.code}.`
+            }
 </script>
 
 
