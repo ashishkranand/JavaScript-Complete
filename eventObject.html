@@ -119,6 +119,18 @@
 
 <script>
 
+    
+    //Remember that the fat-arrow function always need to be written before the function-call
+    let checkEvent = () => {
+        alert('Hi, there');
+        console.log(event);
+        // console.log(event.target);   //it will return the 'element' that triggers the event
+        // console.log(event.type);  // it will the return of the event-triggered weather it is a 'click' or something
+    }  
+    
+    let fourthWay = document.getElementById('fourthWay');
+    fourthWay.addEventListener('click', checkEvent);
+
      
 
 </script>
