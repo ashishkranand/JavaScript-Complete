@@ -114,19 +114,19 @@
 
 
             <!-- Mouse Events : ommousedown() and onmouseup() -->
-             <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">            <!-- In this case we have used the  inline-Events -->
-                Click the text! The mouseDown() function is triggered when the mouse button is pressed
-                down over the paragraph, and sets the color of the text to red.
-                The mouseUp() function is triggered when the mouse button is released and sets
-                the color of the text to green.
-            </p>                            
+                <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">            <!-- In this case we have used the  inline-Events -->
+                    Click the text! The mouseDown() function is triggered when the mouse button is pressed
+                    down over the paragraph, and sets the color of the text to red.
+                    The mouseUp() function is triggered when the mouse button is released and sets
+                    the color of the text to green.
+                </p>                            
             
             <!-- Mouse Events : mouseenter() and mouseleave() -->
-            <p id="box">
-                Enter you mouse in this paragraph 
-                to see the mouseEnter and mouseLeave
-                events triggered.
-            </p>
+                <p id="box">
+                    Enter you mouse in this paragraph 
+                    to see the mouseEnter and mouseLeave
+                    events triggered.
+                </p>
 
 
 
@@ -174,8 +174,8 @@
 
                     <br>
                     
-                    <label> Choose an Icce Cream
-                            <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event -->
+                    <label> Choose an Ice Cream
+                            <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event is important for react -->
                             <option value="">Select One ...</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="sardine">Sardine</option>
@@ -209,8 +209,8 @@
 
 <script>
 
-    
-    //Remember that the fat-arrow function always need to be written before the function-call
+    //EVENT OBJECT
+        //Remember that the fat-arrow function always need to be written before the function-call
         let checkEvent = () => {
             alert('Hi, there');
             console.log(event);
@@ -283,8 +283,12 @@
 
     
 
+                let selectElements = () => {
+                    let inputChange = document.getElementById('ice');
+                    let iceCream = document.getElementById('iceCreams');
 
-    let inputChange = document.getElementById('ice');
+                    console.log(`${inputChange.innerText} and ${iceCream.innerText}`);
+                }
 </script>
 
 
