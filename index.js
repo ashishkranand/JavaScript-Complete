@@ -2283,8 +2283,16 @@
                                     // 4. Using Event listeners (addeventListener and IE's attachEvent)
 
 
-//         SUB-SECTION -  11.2 EVENT OBJECT
-//         SUB-SECTION -  11.3 MouseEvents            (See file eventObject_and_other_events.html)
-//         SUB-SECTION -  11.4 KeyBoard Events        (See file eventObject_and_other_events.html)
-//         SUB-SECTION -  11.5 InputEvents            (See file eventObject_and_other_events.html)
-//         SUB-SECTION -  11.6 Time-Based Events.
+// SUB-SECTION -  11.2 EVENT OBJECT
+// SUB-SECTION -  11.3 MouseEvents            (See file eventObject_and_other_events.html)
+// SUB-SECTION -  11.4 KeyBoard Events        (See file eventObject_and_other_events.html)
+// SUB-SECTION -  11.5 InputEvents            (See file eventObject_and_other_events.html)
+// SUB-SECTION -  11.6 Time-Based Events.
+
+            //    The window object allows the execution of the code at a specified timeInterval.
+            //    These timeIntervals are called the 'timing events'.  
+
+            //    There are two key methods in JavaScript:
+            //    1️⃣. setTimeout(function, milliSeconds)   -- it will execute the function after waiting for the specified number of milliSeconds.
+
+            //    2️⃣. setInterval(function, milliSeconds)   -- it will repeat the execution of the function after waiting for specified number of milliSeconds.
