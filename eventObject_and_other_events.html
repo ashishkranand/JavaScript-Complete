@@ -174,8 +174,19 @@
 
                     <br>
                     
+                <!-- Here we are using the Inline event method -->
                     <label> Choose an Ice Cream
-                        <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event is important for react -->
+                    <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event is important for react -->
+                            <option value="">Select One ...</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="sardine">Sardine</option>
+                            <option value="vanilla">Vanilla</option>
+                        </select>
+                    </label>
+                    
+                <!-- Here we are using the addEventListener(): -->
+                    <label> Choose an Ice Cream
+                        <select name="iceCreams" id="iceCreams">         
                             <option value="">Select One ...</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="sardine">Sardine</option>
@@ -283,15 +294,31 @@
 
     
     //INPUT EVENTS
-                let selectElements = () => {
-                    let inputChange = document.getElementById('ice');
-                    let iceCream = document.getElementById('iceCreams');
 
-                    console.log(`You have typed : ${inputChange.value} and selected option is : ${iceCream.value}`);
-                }
+            //By using the Inline event method:
+                // let selectElements = () => {
+                //     let inputChange = document.getElementById('ice');       //taking the reference of the input-element
+                //     let iceCream = document.getElementById('iceCreams');    //taking the reference of the select-element
+
+                //     console.log(`You have typed : ${inputChange.value} and selected option is : ${iceCream.value}`);
+                // }
 
                 //Note : element.value property returns the value of the 'value' attribute in a text field.
-                //       
+                //       Further note that whenever we type in the input text field the 'value' attribute receives that  entered value 
+
+            
+
+
+
+
+
+
+            //By using the addEventListener() (i.e., By taking a reference of the element)
+
+                let selectElementReference = document.getElementById('iceCreams') ;
+                selectElementReference.addEventListener('change', () => {
+                    console.log(`You have selected : ${selectElementReference.value}.`);
+                });
 </script>
 
 
