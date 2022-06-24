@@ -2275,16 +2275,16 @@
 //          When JavaScript is used in HTML pages, JavaScript react on these events
 
 
-            //Four ways of writing events in JavaScript
+            // SUB-SECTION -  11.2  Four ways of writing events in JavaScript       (See file eventTypes.html)
 
-            // 1. Using Inline Events - alert();
-            // 2. By calling a function
-            // 3. Using Inline events (HTML onclick =" " property and element.onclick)
-            // 4. Using Event listeners (addeventListener and IE's attachEvent)
+                                    // 1. Using Inline Events - alert();
+                                    // 2. By calling a function
+                                    // 3. Using Inline events (HTML onclick =" " property and element.onclick)
+                                    // 4. Using Event listeners (addeventListener and IE's attachEvent)
 
 
 //         SUB-SECTION -  11.2 EVENT OBJECT
-//         SUB-SECTION -  11.3 MouseEvents
-//         SUB-SECTION -  11.4 KeyBoard Events
-//         SUB-SECTION -  11.5 InputEvents
+//         SUB-SECTION -  11.3 MouseEvents            (See file eventObject_and_other_events.html)
+//         SUB-SECTION -  11.4 KeyBoard Events        (See file eventObject_and_other_events.html)
+//         SUB-SECTION -  11.5 InputEvents            (See file eventObject_and_other_events.html)
 //         SUB-SECTION -  11.6 Time-Based Events.
