@@ -174,16 +174,21 @@
 
                     <br>
                     
+             <!-- onchange() event is important for react -->
                 <!-- Here we are using the Inline event method -->
-                    <label> Choose an Ice Cream
-                    <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event is important for react -->
+                    <!-- <label> Choose an Ice Cream
+                    <select name="iceCreams" id="iceCreams" onchange="selectElements()">          
                             <option value="">Select One ...</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="sardine">Sardine</option>
                             <option value="vanilla">Vanilla</option>
                         </select>
-                    </label>
+                    </label> -->
                     
+
+
+                    <br>
+
                 <!-- Here we are using the addEventListener(): -->
                     <label> Choose an Ice Cream
                         <select name="iceCreams" id="iceCreams">         
@@ -316,8 +321,10 @@
             //By using the addEventListener() (i.e., By taking a reference of the element)
 
                 let selectElementReference = document.getElementById('iceCreams') ;
+                
                 selectElementReference.addEventListener('change', () => {
                     console.log(`You have selected : ${selectElementReference.value}.`);
+                    document.getElementById('result').innerText = (`You have selected : ${selectElementReference.value}.`)
                 });
 </script>
 

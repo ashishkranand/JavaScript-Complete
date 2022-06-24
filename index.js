@@ -2283,4 +2283,8 @@
             // 4. Using Event listeners (addeventListener and IE's attachEvent)
 
 
-//           SECTION -  11.2 EVENT OBJECT
+//         SUB-SECTION -  11.2 EVENT OBJECT
+//         SUB-SECTION -  11.3 MouseEvents
+//         SUB-SECTION -  11.4 KeyBoard Events
+//         SUB-SECTION -  11.5 InputEvents
+//         SUB-SECTION -  11.6 Time-Based Events.
