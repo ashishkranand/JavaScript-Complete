@@ -2296,3 +2296,34 @@
             //    1️⃣. setTimeout(function, milliSeconds)   -- it will execute the function after waiting for the specified number of milliSeconds.
 
             //    2️⃣. setInterval(function, milliSeconds)   -- it will repeat the execution of the function after waiting for specified number of milliSeconds.
+
+
+
+
+
+
+
+//*******************************************************************************************************
+
+//     SECTION - 12 : OOPS IN JAVASCRIPT
+
+//*******************************************************************************************************
+
+
+//    SUBSECTION - 12.1 : What is object literals?
+
+//    Object literals are simply a key : value pair data - structure.
+//    Storing variables and functions together in one container,
+//    we can refer this as an object. 
+
+
+//Question : Diffrence between Arrays and Objects in JavaScript
+
+// How to create an Object?
+
+// 1st way
+
+      let bioData = {
+            myname : "Utkarsh Singh Chouhan",
+            myAge : 23,
+      }
