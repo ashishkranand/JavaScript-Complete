@@ -175,7 +175,7 @@
                     <br>
                     
                     <label> Choose an Ice Cream
-                            <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event is important for react -->
+                        <select name="iceCreams" id="iceCreams" onchange="selectElements()">           <!-- onchange() event is important for react -->
                             <option value="">Select One ...</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="sardine">Sardine</option>
@@ -282,12 +282,12 @@
 
 
     
-
+    //INPUT EVENTS
                 let selectElements = () => {
                     let inputChange = document.getElementById('ice');
                     let iceCream = document.getElementById('iceCreams');
 
-                    console.log(`${inputChange.innerText} and ${iceCream.innerText}`);
+                    console.log(`You have typed : ${inputChange.value} and selected option is : ${iceCream.value}`);
                 }
 </script>
 
