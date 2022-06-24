@@ -93,36 +93,129 @@
     <div class="content">
         <h1>Want to know My name ?🖐️</h1>
         <div class="button_container">
+            
+            <p id="showMyName"></p>
 
 
-
-           
+        <!--setTimeout() function  -->
             <div class="button_su">
-                <span class="su_button_circle">
+            <span class="su_button_circle">
 
-                </span>
+            </span>
+                
 
-                <a href="#" class="button_su_inner">
+                <a href="#" class="button_su_inner" id="btn">
                     
-                    <span class="button_text_container" id="btn">
+                    <span class="button_text_container" >
                         Click here
                     </span>
                 </a>                
             </div>         
             
-            <p id="showMyName"></p>
 
 
+        <!-- setTimeout() and clearTimeout() function -->
+            <div style="color: white;">
+                <p>Click "Try it"... wait 3-seconds. The page will alert "hello"</p>
+                <p>Click "Stop" to prevent the first function from execution</p>
+                <p>(You must click "Stop" before the 2 seconds are up)</p>
+
+                <button onclick="returnedVariable = setTimeout(() => alert('hello'), 2000)">Try it</button>
+                <button onclick="clearTimeout(returnedVariable) ">Stop it</button>
+            </div>
+            
+
+
+
+
+
+
+
+
+        <!--setInterval() function and clearInterval() function -->
+
+            <div style="color: white;">
+                <p id="timeOut">Can you stop me when I reach at 5 🙋‍♂️?</p>
+                <br>
+                <button id="btn1"> Start </button>
+                <button id="btn2"> Stop </button>
+            </div>
+
+
+
+            
             
 
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 <script>
 
-    const showMyName = document.querySelector('#showMyName');
-    const btn = document.querySelector('#btn');
 
+
+//  window.setTimeout() function
+        const showMyName = document.querySelector('#showMyName');
+        const btn = document.querySelector('#btn');
+
+        let callingFunction = () => {
+
+            showMyName.innerHTML = "Loading...👻";
+
+            window.setTimeout(() => {
+                showMyName.innerHTML = "Utkarsh Singh Chouhan";
+            }, 1000)
+        }
+        btn.addEventListener('click', callingFunction);
+
+
+
+
+
+
+
+
+// window.setInterval()
+        const stopNum = document.querySelector('#timeOut');
+        const btn1 = document.querySelector('#btn1');
+        let stopInterval = document.querySelector('#btn2');
+
+        let num = 0;
+        let timeRef;
+
+        let callFunction = () => {
+
+            stopNum.innerHTML = "Loading...👻";
+
+            timeRef = setInterval(() => {
+                        stopNum.innerHTML = `${num}`;
+                        num ++;
+                    }, 1000);
+        
+        }
+        btn1.addEventListener('click', callFunction);
+
+    
+    
+// clearInterval()    
+    
+        stopInterval.addEventListener('click', () => {
+            clearInterval(timeRef);
+        });
+        
     
 
 </script>
