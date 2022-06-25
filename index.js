@@ -2540,18 +2540,58 @@
 
 // //➡️ No need to write the key and value, if both are same
 
-            let myName = "Utkarsh Singh Chouhan";
-            let myAge = 23;
+                  let myName = "Utkarsh Singh Chouhan";
+                  let myAge = 23;
 
-            // const myBio = {
-            //       myName : myName,
-            //       myAge : myAge
-            // }
+                  // const myBio = {
+                  //       myName : myName,
+                  //       myAge : myAge
+                  // }
 
-            // console.log(myBio);
+                  // console.log(myBio);
 
 
-            //We can also write the object as,
+            // //We can also write the object as,
 
-            const myBio = {myName, myAge};
-            console.log(myBio);
+            //       const myBio = {myName, myAge};
+            //       console.log(myBio);
+
+
+
+
+
+//*********************************************************************************************
+
+// SECTION - 15  :       ✌️✌️✌️✌️ Spread Operator(...) ✌️✌️✌️✌️
+
+//*********************************************************************************************
+
+// It allows us to quickly copy all or part of an existing array or object onto another array or object.
+
+      // //Spread Operator for an array.
+      //       const colors = ['red', 'blue', 'green', 'white'];
+      
+      //       const newColors = [...colors, 'black', 'purple']
+      
+      //       console.log(newColors);
+
+
+//*********************************************************************************************
+
+// SECTION - 16  :       ✌️✌️✌️✌️ ES7(ECMAScript 2016) ✌️✌️✌️✌️
+
+//*********************************************************************************************
+
+//[Part - 01]➡️ Array.prototype.include() function.
+//[Part - 02]➡️ Exponentiation Operator.
+
+
+
+
+
+
+//*********************************************************************************************
+
+// SECTION - 17  :       ✌️✌️✌️✌️ ES8(ECMAScript 2017) ✌️✌️✌️✌️
+
+//*********************************************************************************************
