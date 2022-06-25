@@ -2512,3 +2512,46 @@
                         
       //                   let {myFName, myLName, myAge, myDegree = 'MCA'} = myBioData;
       //                   console.log(myAge);
+
+
+
+
+
+//*********************************************************************************************
+
+// SECTION - 14  :       ✌️✌️✌️✌️ Object properties ✌️✌️✌️✌️
+
+//*********************************************************************************************
+
+
+// //➡️ We can now use the Dynamic properties
+
+//             let myName = 'Utkarsh';
+
+//             const myBio = {
+//                   [myName] : "Hello, How are U?",
+//                   [20 + 3] : "is my age"
+//             }
+
+//             console.log(myBio);
+
+
+
+
+// //➡️ No need to write the key and value, if both are same
+
+            let myName = "Utkarsh Singh Chouhan";
+            let myAge = 23;
+
+            // const myBio = {
+            //       myName : myName,
+            //       myAge : myAge
+            // }
+
+            // console.log(myBio);
+
+
+            //We can also write the object as,
+
+            const myBio = {myName, myAge};
+            console.log(myBio);
