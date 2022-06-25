@@ -2375,3 +2375,107 @@
 
 //"this" object contains the current context/scope.
 // "this" object can have different values depending upon where it is placed.
+
+
+
+// //    Example - 01
+//             console.log(this);      //here it referes to the current context which is the "window" global object.
+//             console.log(this.alert('hello'));      //since 'this' object referes to the 'window' object hence it can access it properties.
+                                                   //it is similar to writing   -  window.alert('hello')
+
+
+
+
+
+
+
+
+// //     Example - 02
+//             function myName(){
+//                   console.log(this);            //Still the current context of the "this" object is the "window" global object.
+//             }     
+            
+//             myName();
+
+//EXPLANATION - The reason is that, any 'function' or any 'variable' defined outside automatically becomes a part
+            //  of "window" global object, hence "this" object refers to the "window" object.
+
+
+
+
+
+
+// //    Example - 03 (Similar to example - 02)
+//                   let myNames = "Utkarsh singh chouhan";    //varible "myNames" is a part of the "window" global object.
+//                   console.log(this);
+//                   console.log(this.myNames);    //hennce we can acces "myNames" variable using the "this" object.
+
+
+
+
+
+// //  Example - 04
+
+//             const obj = {
+//                   myage : 23,
+//                   myName(){
+//                         console.log(this);        //here 'this' object will refer to the object
+//                         console.log(this.myage);        //hence we can access the properties of the object "obj"
+//                   }                
+//             }
+            
+//             obj.myName();
+
+
+
+
+// //  Example - 05 : "this" object will not work with arrow-function. The reason is that
+
+//             const obj = {
+//                   myAge : 23,
+//                   myName : () => {
+//                         console.log(this);  //here "this" object will refer to the "window" object
+//                   }
+//             }
+
+//             obj.myName();
+
+
+
+//  Example - 06 : What will be tthe output?
+
+            // let bioData = {
+            //       myName : {
+            //             firstName : "Utkarsh",
+            //             lastName : "Chouhan"
+            //       },
+
+            //       myAge : 23,
+
+            //       getData(){
+            //             console.log(`My name is ${this.myName.firstName} ${this.myName.lastName} and my age is ${this.myAge}.`);
+            //       }
+            // }
+
+            // bioData.getData();
+
+
+
+
+//*********************************************************************************************
+
+// SECTION - 13  :        DESTRUCTURING IN JAVASCRIPT
+
+//*********************************************************************************************
+
+
+//➡️ Array Destructuring 🚩
+
+const BioData = ['Utkarsh', 'Singh', 'Chouhan', 23];
+
+let myFName = BioData[0];
+let myLName = BioData[1];
+let myAge = BioData[2];
+
+console.log();
+
