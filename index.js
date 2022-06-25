@@ -2470,29 +2470,45 @@
 
 
       //SubSection - 13.1 ➡️ Array Destructuring 🚩
-
-                              const bioData = ['Utkarsh', 'Singh', 'Chouhan', 23];
-
+      
+                        // const bioData = ['Utkarsh', 'Singh', 'Chouhan', 23];
+                        
                         // //Traditional way of Arry Destructuring (this will be exhausting when we have a lot of values in the array)     
                         //       let myFName = BioData[0];
                         //       let myMName = BioData[1];
                         //       let myLName = BioData[2];
                         //       let myAge = BioData[3];
-
+                        
                         //       console.log(myFName);
 
-
+                        
                         // //More optimized way to Destructure an Array
-
+                        
                         //             let [myFName, myMName, myLName, myAge] = bioData;
-
+                        
                         //             console.log(myFName);
                         //             console.log(myMName);
                         //             console.log(myLName);
                         //             console.log(myAge);
+                        
+                        //We can add values too,
+                        
+                        // let [myFName, myMName, myLName, myAge, myDegree = 'MCA'] = bioData;
+                        
+                        //       console.log(myDegree);
 
-                              //We can add values too,
 
-                              let [myFName, myMName, myLName, myAge, myDegree = 'MCA'] = bioData;
 
-                              console.log(myDegree);
+      // //SubSection - 13.2 ➡️ Object Destructuring 🚩
+
+      //                   const myBioData = {
+      //                         myFName : 'Utkarsh',
+      //                         myLName : 'Chouhan',
+      //                         myAge : 23
+      //                   }
+
+      //                   let age = myBioData.age;
+                        
+                        
+      //                   let {myFName, myLName, myAge, myDegree = 'MCA'} = myBioData;
+      //                   console.log(myAge);
