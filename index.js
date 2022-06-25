@@ -2321,9 +2321,57 @@
 
 // How to create an Object?
 
-// 1st way
+// 1st way : 
 
-      let bioData = {
-            myname : "Utkarsh Singh Chouhan",
-            myAge : 23,
-      }
+            // let bioData = {
+            //       myName : "Utkarsh Singh Chouhan",
+            //       myAge : 23,
+            //       getData : function(){
+            //             console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}.`);
+            //       }
+            // }
+
+            // bioData.getData();
+
+//2nd Way : After ES6 there is no need to write the 'function' keyword.
+
+      
+            // let bioData1 = {
+            //       myName : "Utkarsh Singh Chouhan",
+            //       myAge : 23,
+            //       getData(){
+            //             console.log(`My name is ${bioData1.myName} and my age is ${bioData.myAge}.`);
+            //       }
+            // }
+
+            // bioData1.getData();  
+
+
+//What if we want 'object' as a value inside another 'object'?
+
+            // let bioData1 = {
+            //       myName : {
+            //             firstName : 'Utkarsh',
+            //             middleName : 'Singh',
+            //             lastName : 'Chouhan',
+
+            //       },
+            //       myAge : 23,
+            //       getData(){
+            //             console.log(`My name is ${bioData1.myName} and my age is ${bioData.myAge}.`);
+            //       }
+            // }
+
+            // console.log(bioData1.myName);
+            // console.log(bioData1.myName.firstName);
+            // console.log(bioData1.myName.middleName);
+            // console.log(bioData1.myName.lastName);
+
+
+
+
+
+//What is 'this' object?
+
+//"this" object contains the current context/scope.
+// "this" object can have different values depending upon where it is placed.
