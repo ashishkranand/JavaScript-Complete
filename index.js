@@ -2305,7 +2305,7 @@
 
 //*******************************************************************************************************
 
-//     SECTION - 12 : OOPS IN JAVASCRIPT
+//     SECTION - 12 :         ✌️✌️✌️✌️  OOPS IN JAVASCRIPT ✌️✌️✌️✌️
 
 //*******************************************************************************************************
 
@@ -2464,18 +2464,35 @@
 
 //*********************************************************************************************
 
-// SECTION - 13  :        DESTRUCTURING IN JAVASCRIPT
+// SECTION - 13  :       ✌️✌️✌️✌️ DESTRUCTURING IN JAVASCRIPT ✌️✌️✌️✌️
 
 //*********************************************************************************************
 
 
-//➡️ Array Destructuring 🚩
+      //SubSection - 13.1 ➡️ Array Destructuring 🚩
 
-const BioData = ['Utkarsh', 'Singh', 'Chouhan', 23];
+                              const bioData = ['Utkarsh', 'Singh', 'Chouhan', 23];
 
-let myFName = BioData[0];
-let myLName = BioData[1];
-let myAge = BioData[2];
+                        // //Traditional way of Arry Destructuring (this will be exhausting when we have a lot of values in the array)     
+                        //       let myFName = BioData[0];
+                        //       let myMName = BioData[1];
+                        //       let myLName = BioData[2];
+                        //       let myAge = BioData[3];
 
-console.log();
+                        //       console.log(myFName);
 
+
+                        // //More optimized way to Destructure an Array
+
+                        //             let [myFName, myMName, myLName, myAge] = bioData;
+
+                        //             console.log(myFName);
+                        //             console.log(myMName);
+                        //             console.log(myLName);
+                        //             console.log(myAge);
+
+                              //We can add values too,
+
+                              let [myFName, myMName, myLName, myAge, myDegree = 'MCA'] = bioData;
+
+                              console.log(myDegree);
