@@ -2540,8 +2540,8 @@
 
 // //➡️ No need to write the key and value, if both are same
 
-                  let myName = "Utkarsh Singh Chouhan";
-                  let myAge = 23;
+                  // let myName = "Utkarsh Singh Chouhan";
+                  // let myAge = 23;
 
                   // const myBio = {
                   //       myName : myName,
@@ -2595,3 +2595,10 @@
 // SECTION - 17  :       ✌️✌️✌️✌️ ES8(ECMAScript 2017) ✌️✌️✌️✌️
 
 //*********************************************************************************************
+
+
+// SUB-SECTION - 17.1➡️ String Padding 🚩
+
+            let myName = 'Utkarsh'.padStart(10);
+// Object.values()
+// Object.entries()
