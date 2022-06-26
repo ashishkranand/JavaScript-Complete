@@ -2599,6 +2599,40 @@
 
 // SUB-SECTION - 17.1➡️ String Padding 🚩
 
-            let myName = 'Utkarsh'.padStart(10);
-// Object.values()
-// Object.entries()
+// let myName = 'Utkarsh'.padStart(10);            //it will provide the spaces in front of the string or number(as a string).
+// console.log(myName);                            //Here the number of spaces will be equal to absolute value of  [10 - 7(i.e., number of characters in the string)]
+
+
+
+// let myName1 = 'Utkarsh'.padEnd(15);       //it will give the number of spaces in the end of the string             
+// console.log(myName);                      //here the number of spaces provided will be equal to [15 - 7]
+
+
+
+// SUB-SECTION - 17.2➡️ Object.values() 🚩
+
+// const obj = {
+      //       name : "Utkarsh",
+      //       age : 23
+      // }
+      
+      // console.log(Object.values(obj));    //returns an 'Array-object' containing the value of the 'key'.      
+      // console.log(typeof(Object.values(obj)));       
+      
+      
+      
+// SUB-SECTION - 17.2➡️ Object.entries() 🚩
+
+            // console.log(Object.entries(obj));         //returns an 'Array-object' containing the arrays of keys and values.
+            // console.log(typeof(Object.entries(obj)));
+            
+            
+            
+
+//*********************************************************************************************
+
+// SECTION - 18  :       ✌️✌️✌️✌️ ES9(ECMAScript 2018) ✌️✌️✌️✌️
+
+//*********************************************************************************************
+
+
