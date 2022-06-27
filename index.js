@@ -2673,7 +2673,22 @@
                   // console.log(arr.flat(Infinity));     //it will flat the array upto any level
 
 
-// Sub-Section 19.2 ➡️ String.trimStart and String.trimEnd 🚩
+// Sub-Section 19.2 ➡️ Object.fromEntries() 🚩
+
+                  // const obj = {
+                  //       name : "Utkarsh",
+                  //       age : 23
+                  // }
+
+                  // console.log(Object.entries(obj));   //Object.entries() convert object into the array 
+                  
+                  
+                  // let arr = Object.entries(obj);
+
+                  // console.log(Object.fromEntries(arr));   //Object.entries() convert array into the object 
+
+
+// Sub-Section 19.3 ➡️ String.trimStart and String.trimEnd 🚩
 
 
                   // As padStar() and padEnd() adds white spaces at start and end of the String,
@@ -2695,4 +2710,23 @@
    
    
    
+//*********************************************************************************************
+
+// SECTION - 19  :       ✌️✌️✌️✌️ ES11(ECMAScript 2020) ✌️✌️✌️✌️
+
+//*********************************************************************************************
    
+
+
+            // 1. BigInt:
+            
+                  let oldNum = Number.MAX_SAFE_INTEGER;
+                  console.log(oldNum);
+                  console.log(oldNum + 12);
+
+                  let newNum = 9007199254740991n + 12n
+                  console.log(newNum);
+                  console.log(typeof(newNum));
+
+
+            // 1. Nullish Coalesing:
