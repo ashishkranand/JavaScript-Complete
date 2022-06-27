@@ -802,40 +802,40 @@
 
 
 // 4️⃣ Destructuring in ES6
-// The destructuring assignment syntax is a JavaScript expression 
-// that makes it possible to unpack values from arrays, 
-// or properties from objects, into distinct variables.
+            // The destructuring assignment syntax is a JavaScript expression 
+            // that makes it possible to unpack values from arrays, 
+            // or properties from objects, into distinct variables.
 
   //  ➡ Array Destructuring  🏁
 
-  // const myBioData = ['vinod', 'thapa', 26];
+            // const myBioData = ['vinod', 'thapa', 26];
 
-  // let myFName = myBioData[0];
-  // let myLName = myBioData[1];
-  // let myAge = myBioData[2];
+            // let myFName = myBioData[0];
+            // let myLName = myBioData[1];
+            // let myAge = myBioData[2];
 
-// let [myFName,myAge, myLName] = myBioData;
-// console.log(myAge);
+            // let [myFName,myAge, myLName] = myBioData;
+            // console.log(myAge);
 
-  // we can add values too 
+            // we can add values too 
 
-  // let [myFName,myLName,myAge, myDegree="MCS"] = myBioData;
-  // console.log(myDegree);
+            // let [myFName,myLName,myAge, myDegree="MCS"] = myBioData;
+            // console.log(myDegree);
 
 
 
   // ➡ Object destructuring 🏁
-  // const myBioData = {
-  //   myFname : 'vinod',
-  //   myLname : 'thapa',
-  //   myAge : 26
-  // }
+            // const myBioData = {
+            //   myFname : 'vinod',
+            //   myLname : 'thapa',
+            //   myAge : 26
+            // }
 
-  // let age = myBioData.age;
-  // let myFname = myBioData.myFname;
+            // let age = myBioData.age;
+            // let myFname = myBioData.myFname;
 
-  // let {myFname,myLname,myAge, myDegree="MCS"} = myBioData;
-  // console.log(myLname);
+            // let {myFname,myLname,myAge, myDegree="MCS"} = myBioData;
+            // console.log(myLname);
 
 
 
@@ -2636,3 +2636,14 @@
 //*********************************************************************************************
 
 
+// Sub-Section 18.1 ➡️ Spread Operator for the Objects 🚩
+
+
+                  // const person = {
+                  //       name : 'Utkarsh',
+                  //       age : 23
+                  // };
+
+                  // const combinedObj = {...person};
+
+                  // console.log(combinedObj);
