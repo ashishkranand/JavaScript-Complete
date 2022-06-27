@@ -2599,31 +2599,31 @@
 
 // SUB-SECTION - 17.1➡️ String Padding 🚩
 
-// let myName = 'Utkarsh'.padStart(10);            //it will provide the spaces in front of the string or number(as a string).
-// console.log(myName);                            //Here the number of spaces will be equal to absolute value of  [10 - 7(i.e., number of characters in the string)]
+            // let myName = 'Utkarsh'.padStart(10);            //it will provide the spaces in front of the string or number(as a string).
+            // console.log(myName);                            //Here the number of spaces will be equal to absolute value of  [10 - 7(i.e., number of characters in the string)]
 
 
 
-// let myName1 = 'Utkarsh'.padEnd(15);       //it will give the number of spaces in the end of the string             
-// console.log(myName);                      //here the number of spaces provided will be equal to [15 - 7]
+            // let myName1 = 'Utkarsh'.padEnd(15);       //it will give the number of spaces in the end of the string             
+            // console.log(myName);                      //here the number of spaces provided will be equal to [15 - 7]
 
 
 
 // SUB-SECTION - 17.2➡️ Object.values() 🚩
 
-// const obj = {
-      //       name : "Utkarsh",
-      //       age : 23
-      // }
-      
-      // console.log(Object.values(obj));    //returns an 'Array-object' containing the value of the 'key'.      
-      // console.log(typeof(Object.values(obj)));       
+            // const obj = {
+            //       name : "Utkarsh",
+            //       age : 23
+            // }
+            
+            // console.log(Object.values(obj));    //returns an 'Array-object' containing the value of the 'key'.      
+            // console.log(typeof(Object.values(obj)));       
       
       
       
 // SUB-SECTION - 17.2➡️ Object.entries() 🚩
 
-            // console.log(Object.entries(obj));         //returns an 'Array-object' containing the arrays of keys and values.
+            // console.log(Object.entries(obj));         //returns an 'Array-object' containing the arrays of [keys and values].
             // console.log(typeof(Object.entries(obj)));
             
             
@@ -2647,3 +2647,52 @@
                   // const combinedObj = {...person};
 
                   // console.log(combinedObj);
+                  
+
+//*********************************************************************************************
+
+// SECTION - 18  :       ✌️✌️✌️✌️ ES10(ECMAScript 2019) ✌️✌️✌️✌️
+
+//*********************************************************************************************
+
+
+// Sub-Section 19.1 ➡️ Flatten an Array 🚩
+
+                  // const arr = [
+                  //       ['zone1','zone2'],
+                  //       ['zone3','zone4'],
+                  //       ['zone5','zone6'],
+                  //       ['zone7','zone8'],
+                  //       ['zone9',['zone10','zone11']],
+                  // ];
+
+                  // console.log(arr.flat());
+
+                  // console.log(arr.flat(2));     //it will flat the array upto level-2
+
+                  // console.log(arr.flat(Infinity));     //it will flat the array upto any level
+
+
+// Sub-Section 19.2 ➡️ String.trimStart and String.trimEnd 🚩
+
+
+                  // As padStar() and padEnd() adds white spaces at start and end of the String,
+                  // Similary trimStart() and trimEnd() 'removes' white space from the start and end of the String.
+
+            //String.trimStart()
+
+                  // let str = '        Utkarsh';
+                  // console.log(str);
+            
+                  // console.log(str.trimStart());
+                  
+            //String.trimEnd()
+
+                  // let str = 'Utkarsh           ';
+                  // console.log(str);
+            
+                  // console.log(str.trimEnd());
+   
+   
+   
+   
