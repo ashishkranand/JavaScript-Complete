@@ -2715,18 +2715,45 @@
 // SECTION - 19  :       ✌️✌️✌️✌️ ES11(ECMAScript 2020) ✌️✌️✌️✌️
 
 //*********************************************************************************************
-   
 
 
-            // 1. BigInt:
+
+            // //1. BigInt:
             
-                  let oldNum = Number.MAX_SAFE_INTEGER;
-                  console.log(oldNum);
-                  console.log(oldNum + 12);
+            //       let oldNum = Number.MAX_SAFE_INTEGER;              //MAX_SAFE_INTEGER is a property of the 'Number' object.
+            //       console.log(oldNum);
+            //       console.log(oldNum + 12);
 
-                  let newNum = 9007199254740991n + 12n
-                  console.log(newNum);
-                  console.log(typeof(newNum));
+            //       let newNum = 9007199254740991n + 12n
+            //       console.log(newNum);
+            //       console.log(typeof(newNum));
 
 
-            // 1. Nullish Coalesing:
+            //2. Nullish Coalescing:
+                  //It is a logical operator that returns its RHS value when its LHS value  is 'null' or 'undefined'
+                  //otherwise it returns its LHS value.
+
+                  // falsey values in JavaScript are = " ", NaN, null, 0, undefined and false 
+                  
+                        // console.log(null ?? 'some truth value');            
+                        // console.log(NaN ?? 'some truth value');            
+                        // console.log(undefined ?? 'some truth value');            
+                        // console.log(" " ?? 'some truth value');            
+                        // console.log(false ?? 'some truth value');            
+                        // console.log(1 ?? 'some truth value');            
+                        // console.log(1 ?? 'some truth value');            
+
+
+
+
+//*********************************************************************************************
+
+// SECTION - 20  :       ✌️✌️✌️✌️ ECMAScript 2014 ✌️✌️✌️✌️
+
+//*********************************************************************************************
+
+
+// "use strict";
+
+x = 3.14;
+console.log(x);
