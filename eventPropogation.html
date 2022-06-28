@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event propogation</title>
+
+    <style>
+        body{
+            background-color: rgb(30, 157, 199);
+        }
+        
+        .parentDiv{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 174px;
+            margin-bottom: auto;
+            height: 400px;
+            width: 500px;
+            background-color: rgb(93, 240, 254);
+            border: 3px solid black;
+            box-shadow: 0 10px 13px -10px black;
+            cursor: pointer;
+        }
+
+        .childDiv{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 85px;
+            margin-bottom: auto;
+            height: 200px;
+            width: 300px;
+            background-color: rgb(174, 165, 223);
+            border: 3px solid black;
+            box-shadow: 0 10px 13px -10px black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="parentDiv" id="parentId">
+        <div class="childDiv" id="childId">
+
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+
+    // //EVENT BUBBLING
+    //     const parentId = document.querySelector('#parentId');
+    //     const childId = document.querySelector('#childId');
+
+    //     parentId.addEventListener('click', () => {
+    //         alert('Parent Div called');
+    //     })
+
+    //     childId.addEventListener('click', () => {
+    //         alert('Child Div called');
+    //     })
+        
+
+
+    //EVENT CAPTURING
+        const pId = document.querySelector('#parentId');
+        const cId = document.querySelector('#childId');
+
+        pId.addEventListener('click', () => {
+            alert('Parent Div called');
+        }, true)            //Third argument in the addEventlistener is the "useCapture" ---> true(allows Capturing) & false(do not allow Capturing)
+
+        cId.addEventListener('click', () => {
+            alert('Child Div called');
+        }, true)
+
+</script>
+
+</html>
