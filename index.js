@@ -64,7 +64,7 @@
 // 9 - "5"
 // console.log( 9 - "5"); //bug
 // "Java" + "Script"
-// console.log( "Java "+ "Script");
+//  console.log( "Java "+ "Script");
 // " " + " "
 // console.log( " " + 0);
 // " " + 0
@@ -90,8 +90,8 @@
 // console.log(typeof(iAmUseless));
 // //2nd javascript bug
 
-// var iAmStandBy;
-// console.log(iAmStandBy);
+var iAmStandBy;
+console.log(iAmStandBy);
 // console.log(typeof(iAmStandBy));
 
 
@@ -2755,8 +2755,8 @@
 
             // "use strict";
 
-            x = 3.14;
-            console.log(x);
+            // x = 3.14;
+            // console.log(x);
 
 
 
